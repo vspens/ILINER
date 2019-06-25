@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "111676346939",
+    "firebase_url": "https://iliner.firebaseio.com",
+    "project_id": "iliner",
+    "storage_bucket": "iliner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111676346939:android:c52efb8e26f4adfa",
+        "android_client_info": {
+          "package_name": "com.iliner.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111676346939-2bcq1he80mnuguoph25fu35faq049t0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFWfU1vC8Ynq-C0GbKjSROu4fbFyIks10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111676346939-2bcq1he80mnuguoph25fu35faq049t0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
