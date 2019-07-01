@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Login(){
-        String strEmail = email.toString();
-        String strPass = password.toString();
+        String strEmail = email.getText().toString();
+        String strPass = password.getText().toString();
         try {
             firebaseAuth.signInWithEmailAndPassword(strEmail, strPass).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
