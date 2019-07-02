@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true">
 
     <LinearLayout
@@ -14,29 +13,29 @@
         android:paddingRight="24dp">
 
         <EditText
-            android:id="@+id/inputEmail"
+            android:id="@+id/regName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
-
+            android:hint="Name"/>
         <EditText
-            android:id="@+id/inputPassword"
+            android:id="@+id/regEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/btnLogin"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+        <EditText
+            android:id="@+id/regPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"/>
         <Button
-            android:id="@+id/btnSignup"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Signup" />
-
     </LinearLayout>
 </ScrollView>

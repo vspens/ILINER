@@ -16,7 +16,7 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
-        /*firebaseAuth = firebaseAuth.getInstance();
+        firebaseAuth = firebaseAuth.getInstance();
         txtUser = findViewById(R.id.txtUser);
 
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
@@ -24,7 +24,12 @@ public class HomeActivity extends Activity {
             txtUser.setText(currentUser.getEmail());
         } else {
             Toast.makeText(HomeActivity.this, "ERRORRRRRR", Toast.LENGTH_LONG).show();
-        }*/
+        }
+
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 }

@@ -28,9 +28,10 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
 
-    public EditText email;
-    public EditText password;
+    EditText email;
+    EditText password;
     Button btnLogin;
+    Button btnSignup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.login);
         firebaseAuth = FirebaseAuth.getInstance();
+
+        //login
         email = findViewById(R.id.inputEmail);
         password = findViewById(R.id.inputPassword);
         btnLogin = findViewById(R.id.btnLogin);
+
+        //signup
+        btnSignup = findViewById(R.id.btnSignup);
 
         initializeListeners();
     }
@@ -64,11 +70,17 @@ public class MainActivity extends AppCompatActivity {
                 Login();
             }
         });
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), RegisterUserActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void Login(){
-        String strEmail = email.toString();
-        String strPass = password.toString();
+        String strEmail = email.getText().toString();
+        String strPass = password.getText().toString();
         try {
             firebaseAuth.signInWithEmailAndPassword(strEmail, strPass).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
@@ -85,5 +97,6 @@ public class MainActivity extends AppCompatActivity {
             System.out.println(e.getStackTrace());
         }
     }
+
 
 }

@@ -21,6 +21,8 @@
         </activity>
         <activity android:name="com.iliner.myapplication.HomeActivity" >
         </activity>
+        <activity android:name="com.iliner.myapplication.RegisterUserActivity" >
+        </activity>
     </application>
 
 </manifest>
